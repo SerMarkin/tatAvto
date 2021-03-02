@@ -3,7 +3,6 @@ import { Parallax } from "react-parallax";
 import 'rc-menu/assets/index.css';
 import { Element } from "react-scroll";
 
-import "react-awesome-button/dist/styles.css";
 import "./App.css";
 import image1 from "./assets/nahtan.jpg";
 import MenuHeader from "./components/MenuHeader.js";
