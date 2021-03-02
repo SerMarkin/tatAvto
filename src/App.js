@@ -1,12 +1,11 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import 'rc-menu/assets/index.css';
+import { Element } from "react-scroll";
 
 import "react-awesome-button/dist/styles.css";
 import "./App.css";
-
 import image1 from "./assets/nahtan.jpg";
-import phone from "./assets/phone.PNG";
 import MenuHeader from "./components/MenuHeader.js";
 import FooterButton from "./components/FooterButton";
 
@@ -19,25 +18,40 @@ const App = () => (
     </div>
     <div className="container">
 
+      <Element name="section1"></Element>
 
-      <Parallax bgImage={image1} blur={{ min: -1, max: 3 }}>
+      <Parallax bgImage={image1} blur={{ min: -1, max: 3 }} >
         <div style={{ height: 600 }}>
           <div className="boxs">
             <h1 className="underline">
               Выкуп Авто Казань
-              
-              </h1>
+            </h1>
             <div className="box-con">
-            Выкупим вам автомобиль в кротчайшие сроки и по выгодной цене!
+              Выкупим вам автомобиль в кротчайшие сроки и по выгодной цене!
             </div>
-            <div className="tel-on">
-              <div style={{height:"100%",display:'inline-block'}}>
-                <a className="mgo-number" href="tel:+79534800102">+7(953)480-01-02</a>
+            
+          </div>
+          <div className="tel-on">
+              <div className="tel-on-button">
+                <a target="_blank"
+                  href="https://wa.me/79377788125?text=Здравствуйте!%20Я%20хочу%20продать%20автомобиль." rel="noreferrer"
+                  className="sppb-btn sppb-btn-primary sppb-btn-lg  sppb-text-center" role="button">
+                  <i className="fa fa-whatsapp"></i>
+                    НАПИСАТЬ WHATSAPP
+              </a>
+              </div>
+              <div className="tel-on-button">
+                <a href="tel:+79534800102"
+                  className="sppb-btn sppb-btn-primary sppb-btn-lg  sppb-text-center" style={{ background: '#5959ff' }} role="button">
+                  <i className="fa fa-phone"></i>
+                    ПОЗВОНИТЬ
+              </a>
               </div>
             </div>
-          </div>
         </div>
       </Parallax>
+
+      <Element name="section2"></Element>
 
       <Parallax strength={-100}>
         <div style={{ height: 500 }}>
@@ -50,6 +64,7 @@ const App = () => (
         </div>
       </Parallax>
 
+      <Element name="section3"></Element>
 
       <Parallax strength={-100}>
         <div style={{ height: 600 }}>
