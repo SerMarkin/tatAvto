@@ -8,6 +8,7 @@ const classNameBlock = (e) => {
 const classNameHigh = (e) => {
     return e ? " fixed-high" : ""
 }
+const hostname = window.location.hostname
 
 
 class FooterButton extends React.PureComponent {
@@ -34,7 +35,7 @@ class FooterButton extends React.PureComponent {
             })
             return;
         }
-        axios.get('http://localhost:8081/sendEmail?body='+(this.state.name + " " + this.state.phone + " " + this.state.comment))
+        axios.get('http://'+hostname+':8081/sendEmail?body='+(this.state.name + " " + this.state.phone + " " + this.state.comment))
         this.setState({ openDialog: false, errorPhone: false })
     }
 
