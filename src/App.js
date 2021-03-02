@@ -51,7 +51,8 @@ const App = () => (
       </Parallax>
 
       <Element name="section2"></Element>
-
+      <Element name="section3"></Element>
+{/* 
       <Parallax strength={-100}>
         <div style={{ height: 500 }}>
           <div className="boxs">
@@ -63,7 +64,6 @@ const App = () => (
         </div>
       </Parallax>
 
-      <Element name="section3"></Element>
 
       <Parallax strength={-100}>
         <div style={{ height: 600 }}>
@@ -74,7 +74,7 @@ const App = () => (
             </div>
           </div>
         </div>
-      </Parallax>
+      </Parallax> */}
     </div>
     <FooterButton />
   </div>
